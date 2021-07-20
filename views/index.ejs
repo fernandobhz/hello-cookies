@@ -11,6 +11,10 @@
     <% if(locals.id) { %>
       The ID: <%= id %>
     <% } %>
+
+    <% if(locals.cookies) { %>
+      <pre><%=JSON.stringify(cookies, null, 2)%></pre>
+    <% } %>
     
   </body>
 </html>
